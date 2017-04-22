@@ -3,7 +3,7 @@ A implementation of Merkle Tree
 
 Author: Zhanchen Guo
 
-No require package is needed. This package only support Python 2
+No external package is required. This package only support Python 2
 
 
 Merkle Tree is a binary tree that use hashes as value stored in each node. It also known as blockchain as it can check if all the information in the tree are the same by comparing only the hash value of the root node. More information in [Wikipedia](https://en.wikipedia.org/wiki/Merkle_tree)
