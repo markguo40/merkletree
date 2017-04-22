@@ -231,6 +231,7 @@ def sample():
     print "Height:", hashed.getHeight()
     print "Root Value:", hashed.getRootValue()
     hashed.add(["Marrital Status: Single"])
+    # After add values, the height of the tree should grow 1
     print "After adding"
     print "Height:", hashed.getHeight()
     print "Root Value:", hashed.getRootValue()
@@ -238,10 +239,10 @@ def sample():
     print hashed.getValuesFromDepth(2)
 
     hashed2 = MerkleTree(sample2)
-    hashed2.diff(hashed)
+    hashed2.diff(hashed) # make comparison when two trees has different height
 
     print
     print "###########################"
     print "New case when they have the same height"
     hashed2.add(["Marrital Status: Single"])
-    hashed2.diff(hashed)
+    hashed2.diff(hashed) # make comparison when two trees has the same height
